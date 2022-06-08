@@ -113,14 +113,31 @@ nav ul li a:hover:after{
 .skills{
     margin-top: 8%;
 }
+
+
 .skills-grid{
     display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
   column-gap: 10px;
   align-content: center;
     margin: 4% 0 4% 0;
 }
+
+@media screen and (min-width: 600px) {
+    .skills-grid{
+    grid-template-columns: repeat(2, 1fr);
+    }
+}
+  
+@media screen and (min-width: 800px) {
+    .skills-grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+
 .skills-grid > ul>li,h4{
     list-style: none;
     margin: 5px 15px 5px 35px;
@@ -139,13 +156,19 @@ nav ul li a:hover:after{
 
 .projects-grid{
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 10px;
-    column-gap: 10px;
-    row-gap: 30px;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 20px;
     align-content: center;
     margin: 4% 0 4% 0;
 }
+@media screen and (min-width: 800px) {
+    .projects-grid{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 10px;
+        row-gap: 30px;
+    }
+}
+
 .contact{
     background-color: #cfd3fd;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -161,11 +184,18 @@ nav ul li a:hover:after{
 
 .about-div{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     margin-bottom: 4%;
 
 
 }
+
+@media screen and (min-width: 800px) {
+    .about-div{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 .about-div >div> img{
     width:80%;
 }
@@ -192,6 +222,7 @@ nav ul li a:hover:after{
     border: 2px solid #0409f8;
     position: center;
     margin: 2% 2% 2% 2%;
+    cursor: pointer;
 }
 
 .btn-link:hover{
@@ -203,7 +234,7 @@ nav ul li a:hover:after{
 .projects-grid > .card p{
 
     margin:4% 4% 4% 4%;
-    height: 180px;
+    height: 200px;
 }
 .icons{
     text-decoration: none;
@@ -216,6 +247,6 @@ nav ul li a:hover:after{
 }
 
 .form-items > label{
-    width:80px;
+    width:90px;
     display: inline-block;
 }
