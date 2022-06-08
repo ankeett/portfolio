@@ -5,15 +5,183 @@
     <title>Ankit's Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/41d4681df0.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </head>
+
   <body>
-    <div id="content">
-      <h1>Ankit's Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
+    <div id="hero">
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class ="icons">
+          <a href="https://www.instagram.com/ankeett_kafle/"><i class="fa-brands fa-instagram fa-xl"></i></a>
+          <a href="www.linkedin.com/in/akafle1"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+          <a href="https://github.com/ankeett"><i class="fa-brands fa-github fa-xl"></i></a>
+          
+        </div>
+        
+      </nav>
+
+      <div class="content" id="home">
+        <span class="title">Learning Frontend Developer</span>
+        <h1>Hello, I'm <span>Ankit</span></h1>
+        <p>I'm a rising junior who's interested in Frontend Development.</p>
+        <a href="#contact" class="btn" >Say Hi!</a>
+        <a href="Resume-Ankit.docx" class="btn"download >Download CV</a>
+        
+        
+      </div>
     </div>
+
+    <section class="skills" id="skills">
+      <h1>Skills</h1>
+      <div class="skills-grid">
+        <ul class="card">
+          <img src="./icons/programming.png" alt="Programming" >
+          <h4>Programming Languages:</h4>
+          <li>C++</li>
+          <li>Python</li>
+          <li>C</li>
+          <li>java</li>
+          <li>JavaScript</li>
+        </ul>
+
+        <ul class="card">
+          <img src="./icons/internet.png" alt="Programming">
+          <h4>Web Development:</h4>
+          
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Tailwind</li>
+        <li>Bootstrap</li>
+        <li>React.js</li>
+        <li>Node.js</li>
+        </ul>
+
+        <ul class="card">
+          <img src="./icons/dashboard.png" alt="Programming" >
+          <h4>Data Science:</h4>
+        <li>Numpy</li>
+        <li>Pandas</li>
+        <li>Matplotlib</li>
+        <li>Seaborn</li>
+        </ul>
+    </div>
+    </section>
+
+    <section id="projects">
+      <h1>Projects</h1>
+      <div class="projects-grid">
+        <div class="card">
+          <img src="./images/VC8000.png" alt="Assembler" width="100%">
+          <h4>VC8000</h4>
+
+          <p>This project consists of an assembler and emulator for the VC8000 computer.  
+            An assembler is a program that translates a program written in assembly language (symbolic machine language) into machine language.
+            
+            An emulator is a program that imitates a specified machine.  So, if you give it a machine language program for that machine, it will be able to run it.
+          </p>
+
+          <h5>C++</h5>
+
+            <a href="https://github.com/ankeett/VC8000" class="btn-link">Link</a>
+        </div>
+
+        <div class="card">
+          <img src="./images/blog.png" alt="blog" width="100%">
+          <h4>Blog Page</h4>
+
+          <p>A simple Blog Website that can be used by anyone who wants to write down their thoughs and creativity.</p>
+
+          <h5>React.js, React Router</h5>
+
+          <a href="https://github.com/ankeett/blog" class="btn-link">Link</a>
+        </div>
+
+        <div class="card">
+          <img src="./images/meme.png" alt="meme" width="100%">
+          <h4>Meme Generator</h4>
+          <p>A react application that helps creating a meme by random generation of images of meme template. It uses Imgflip's API to fetch images.</p>
+
+          <h5>React.js, API</h5>
+
+          <a href="https://github.com/ankeett/hackathon" class="btn-link">Link</a>
+        </div>
+        
+        <div class="card">
+          <img src="./images/todo.png" alt="todo" width="100%">
+          <h4>Todo List</h4>
+          <p>A react application that helps us to organize our todo-list.</p>
+
+          <h5>React.js</h5>
+          <a href="https://github.com/ankeett/todo" class="btn-link">Link</a>
+        </div>
+
+        <div class="card">
+          <h4>On Progress...</h4>
+        </div>
+        
+      </div>
+      
+  </section>
+
+  <section id="about">
+    <h1>About Me</h1>
+
+    <div class="about-div">
+    <div>
+      <img src="./images/self.png" alt="self"">
+    </div>
+    
+    <div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et magnis dis parturient montes nascetur ridiculus mus mauris vitae. Vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean. Consequat ac felis donec et. Lacus laoreet non curabitur gravida arcu ac tortor dignissim. Quis imperdiet massa tincidunt nunc pulvinar sapien et. Malesuada fames ac turpis egestas. Felis eget velit aliquet sagittis id consectetur purus ut faucibus. Nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Imperdiet dui accumsan sit amet.
+
+        Erat imperdiet sed euismod nisi porta lorem mollis. Eu volutpat odio facilisis mauris sit. Consequat nisl vel pretium lectus. In iaculis nunc sed augue lacus viverra vitae. Sed augue lacus viverra vitae congue eu consequat. Dolor sit amet consectetur adipiscing elit duis tristique. Sed id semper risus in hendrerit gravida rutrum quisque. Duis ut diam quam nulla porttitor. Porttitor rhoncus dolor purus non. Aliquet porttitor lacus luctus accumsan tortor posuere ac ut. Lectus sit amet est placerat in egestas erat. Consectetur adipiscing elit duis tristique sollicitudin. Nisl nisi scelerisque eu ultrices vitae auctor eu augue ut. Ornare massa eget egestas purus viverra accumsan. Lacus vel facilisis volutpat est velit egestas dui id. Quam id leo in vitae turpis massa sed. Non arcu risus quis varius. Duis at consectetur lorem donec massa sapien faucibus et molestie.</p>
+    </div>
+  </div>
+    
+  </section>
+
+  <section id="contact">
+    <h1>Contact Me</h1>
+    <div class="contact">
+
+      <div class="form-items">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Name" required>
+      </div>
+    
+      <div class="form-items">
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" placeholder="Email" required>
+      </div>
+
+      <div class="form-items">
+        <label for="subject">Subject</label>
+        <input type="text" name="subject" id="subject" placeholder="Subject" required>
+      </div>
+
+      <div class="form-items">
+        <label for="message">Message</label>
+        <textarea type="text" name="message" id="message" placeholder="Message" required></textarea>
+      </div>
+
+    <button type ="submit" class="btn-link">Send</button>
+
+  </div>
+  </section>
+
+
+
+  <footer>
+    All rights reserved 
+  </footer>
+
   </body>
 </html>
