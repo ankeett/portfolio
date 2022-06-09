@@ -9,8 +9,9 @@
 
 body{
     margin-left: 8%;
+    padding-right: 5%;
 }
-a{
+a:link,a:visited{
     text-decoration: none;
 }
 .hero{
@@ -20,9 +21,8 @@ a{
 }
 nav{
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 30px 100px;
+    margin-top: 20px;
 }
 .logo{
     max-height: 60px;
@@ -75,7 +75,6 @@ nav ul li a:hover:after{
 .content{
     position: relative;
     top: 35%;
-
     margin-top: 21%;
 }
 .content .title{
@@ -97,8 +96,19 @@ nav ul li a:hover:after{
     text-transform: inherit;
     width: 70%;
 }
+
+
 .content h1 span{
     color: #0409f8;
+}
+.content h1 span:hover{
+    color: #fff;
+    background-color: #0409f8;
+    border-radius: 25px;
+}
+.content h1 span:hover:after{
+    content:" Kafle";
+    
 }
 .content p{
     width: 55%;
@@ -109,6 +119,15 @@ nav ul li a:hover:after{
 .tag{
     position: relative;
 }
+
+#self-image{
+    float: right;
+    margin-top: 100px;
+    width:300px;
+    height:400px;
+    border: #cfd3fd;
+}
+
 .skills{
     margin-top: 8%;
 }
@@ -151,6 +170,12 @@ nav ul li a:hover:after{
     transition: 0.3s;
     width: 90%;
     border-radius: 5px;
+    padding: 10px 10px 10px 10px;
+}
+
+.card:hover{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
+    cursor: pointer;
 }
 
 .projects-grid{
@@ -197,6 +222,7 @@ nav ul li a:hover:after{
 
 .about-div >div> img{
     width:80%;
+    border-radius: 50%;
 }
 
 .about-div>div>p{
@@ -237,6 +263,7 @@ nav ul li a:hover:after{
 }
 .icons{
     text-decoration: none;
+    padding-right: 50px;
 }
 
 .form-items{
@@ -246,6 +273,6 @@ nav ul li a:hover:after{
 }
 
 .form-items > label{
-    width:90px;
+    width:120px;
     display: inline-block;
 }

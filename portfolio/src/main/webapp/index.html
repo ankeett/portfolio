@@ -5,6 +5,7 @@
     <title>Ankit's Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <link rel="icon" href= "./icons/icons8-user-96.png">
     <script src="https://kit.fontawesome.com/41d4681df0.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </head>
@@ -20,16 +21,17 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
         <div class ="icons">
-          <a href="https://www.instagram.com/ankeett_kafle/"><i class="fa-brands fa-instagram fa-xl"></i></a>
-          <a href="www.linkedin.com/in/akafle1"><i class="fa-brands fa-linkedin fa-xl"></i></a>
-          <a href="https://github.com/ankeett"><i class="fa-brands fa-github fa-xl"></i></a>
+          <a href="https://www.instagram.com/ankeett_kafle/" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a>
+          <a href="https://www.linkedin.com/in/akafle1" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+          <a href="https://github.com/ankeett" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a>
           
         </div>
         
       </nav>
+      <img id="self-image" src="./images/IMG-1132.JPG" alt="self" >
 
       <div class="content" id="home">
-        <span class="title">Learning Frontend Developer</span>
+        <span class="title">Frontend Developer</span>
         <h1>Hello, I'm <span>Ankit</span></h1>
         <p>I'm a rising junior who's interested in Frontend Development.</p>
         <a href="#contact" class="btn" >Say Hi!</a>
@@ -48,7 +50,7 @@
           <li>C++</li>
           <li>Python</li>
           <li>C</li>
-          <li>java</li>
+          <li>Java</li>
           <li>JavaScript</li>
         </ul>
 
@@ -67,7 +69,7 @@
         <ul class="card">
           <img src="./icons/dashboard.png" alt="Programming" >
           <h4>Data Science:</h4>
-        <li>Numpy</li>
+        <li>NumPy</li>
         <li>Pandas</li>
         <li>Matplotlib</li>
         <li>Seaborn</li>
@@ -80,7 +82,7 @@
       <div class="projects-grid">
         <div class="card">
           <img src="./images/VC8000.png" alt="Assembler" width="100%">
-          <h4>VC8000</h4>
+          <h4>VC8000 Assembler</h4>
 
           <p>This project consists of an assembler and emulator for the VC8000 computer.  
             An assembler is a program that translates a program written in assembly language (symbolic machine language) into machine language.
@@ -92,7 +94,7 @@
 
             <a href="https://github.com/ankeett/VC8000" class="btn-link">Link</a>
         </div>
-
+          
         <div class="card">
           <img src="./images/blog.png" alt="blog" width="100%">
           <h4>Blog Page</h4>
@@ -151,7 +153,7 @@
   <section id="contact">
     <h1>Contact Me</h1>
     <div class="contact">
-
+      <form action="/action_page.html" method="post">
       <div class="form-items">
         <label for="name">Name</label>
         <input type="text" name="name" id="name" placeholder="Name" required>
@@ -172,7 +174,13 @@
         <textarea type="text" name="message" id="message" placeholder="Message" required></textarea>
       </div>
 
-    <button type ="submit" class="btn-link">Send</button>
+      
+      <div class="form-items">
+        <label for="check">I'm not a robot</label>
+        <input type="checkbox" name="check" id="check" required>
+      </div>
+      <input type="submit" class="btn-link" value="Send">
+    </form>
 
   </div>
   </section>
