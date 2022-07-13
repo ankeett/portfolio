@@ -26,3 +26,12 @@ function addRandomGreeting() {
   const greetingContainer = document.getElementById('greeting-container');
   greetingContainer.innerText = greeting;
 }
+
+function loadMessages() {
+    fetch('/list-message.html').then(response => response.json()).then((messages) => {
+      const messageListElement = document.getElementById('message-list');
+      messages.forEach((message) => {
+        messageListElement.appendChild(createTaskElement(message));
+      })
+    });
+  }

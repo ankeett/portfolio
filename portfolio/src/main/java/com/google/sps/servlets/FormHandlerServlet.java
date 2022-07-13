@@ -6,29 +6,25 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/form-handler")
+@WebServlet("/form-handlers")
 public class FormHandlerServlet extends HttpServlet {
 
-  @Override
-  public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
+    @Override
+    public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        String name = request.getParameter("name");
+        String email = request.getParameter("email");
+        String subject = request.getParameter("subject");
+        String message = request.getParameter("message");
+        sendResponse(response, String.format("%s\n%s\n%s\n%s", name, email, subject, message));
+    }
 
-    // Get the value entered in the form.
-    String name = request.getParameter("name");
-    String email = request.getParameter("email");
-    String subject = request.getParameter("subject");
-    String message = request.getParameter("message");
+    private void sendResponse(HttpServletResponse response, String responseText) throws IOException {
+        System.out.println(responseText);
+        String[] arrOfStr = responseText.split("\n",4);
 
-
-    // Print the value so you can see it in the server logs.
-    System.out.println("Name: " + name);
-    System.out.println("\nEmail: " + email);
-    System.out.println("\nSubject: " + subject);
-    System.out.println("\nmessage: " + message);
-
-    // Write the value to the response so the user can see it.
-    response.getWriter().println("\nName: " + name);
-    response.getWriter().println("\nEmail: " + email);
-    response.getWriter().println("\nSubject: " + subject);
-    response.getWriter().println("\nmessage: " + message);
-  }
+        response.getWriter().println("Name: "+arrOfStr[0]);
+        response.getWriter().println("Email: "+arrOfStr[1]);
+        response.getWriter().println("Subject: "+arrOfStr[2]);
+        response.getWriter().println("Message:\n "+arrOfStr[3]);
+    }
 }

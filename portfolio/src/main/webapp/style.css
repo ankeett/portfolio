@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
 *{
     margin: 0;
     padding: 0;
@@ -101,15 +104,7 @@ nav ul li a:hover:after{
 .content h1 span{
     color: #0409f8;
 }
-.content h1 span:hover{
-    color: #fff;
-    background-color: #0409f8;
-    border-radius: 25px;
-}
-.content h1 span:hover:after{
-    content:" Kafle";
-    
-}
+
 .content p{
     width: 55%;
     color: #757575;
