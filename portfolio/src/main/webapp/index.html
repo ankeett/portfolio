@@ -10,7 +10,7 @@
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </head>
 
-  <body>
+  <body onload=refreshProjects()>
     <div id="hero">
       <nav>
         <ul>
@@ -79,7 +79,7 @@
 
     <section id="projects">
       <h1>Projects</h1>
-      <div class="projects-grid">
+      <div class="projects-grid" id="div">
         <div class="card">
           <img src="./images/VC8000.png" alt="Assembler" width="100%">
           <h4>VC8000 Assembler</h4>
