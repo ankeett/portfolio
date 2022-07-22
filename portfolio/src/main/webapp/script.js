@@ -49,15 +49,32 @@ let getProjects = function(){
             },
             {
                 
-                "Title": "VC8000",
-                "img": "./images/VC8000.png",
-                "Description": "This project consists of an assembler and emulator for the VC8000 computer. An assembler is a program that translates a program written in assembly language (symbolic machine language) into machine language. An emulator is a program that imitates a specified machine. So, if you give it a machine language program for that machine, it will be able to run it.",
-                "Tags": "C++",
-                "Link": "https://github.com/ankeett/VC8000",
-            }
+                "Title": "Blog Page",
+                "img": "./images/blog.png",
+                "Description": "A simple Blog Website that can be used by anyone who wants to write down their thoughs and creativity.",
+                "Tags": "React.js, React Router",
+                "Link": "https://github.com/ankeett/blog",
+            },
+            {
+                
+                "Title": "Meme Generator",
+                "img": "./images/meme.png",
+                "Description": "A react application that helps creating a meme by random generation of images of meme template. It uses Imgflip's API to fetch images.",
+                "Tags": "React.js, API",
+                "Link": "https://github.com/ankeett/hackathon",
+            },
+            {
+                
+                "Title": "Todo List",
+                "img": "./images/todo.png",
+                "Description": "A react application that helps us to organize our todo-list.",
+                "Tags": "React.js",
+                "Link": "https://github.com/ankeett/todo",
+            },
         ]
     }
 };
+
 
 const Projects = getProjects();
 function refreshProjects(){
@@ -94,19 +111,3 @@ function refreshProjects(){
 
     }
 }
-
-
-{/* <div class="card">
-          <img src="./images/VC8000.png" alt="Assembler" width="100%">
-          <h4>VC8000 Assembler</h4>
-
-          <p>This project consists of an assembler and emulator for the VC8000 computer.  
-            An assembler is a program that translates a program written in assembly language (symbolic machine language) into machine language.
-            
-            An emulator is a program that imitates a specified machine.  So, if you give it a machine language program for that machine, it will be able to run it.
-          </p>
-
-          <h5>C++</h5>
-
-            <a href="https://github.com/ankeett/VC8000" class="btn-link">Link</a>
-</div> */}
