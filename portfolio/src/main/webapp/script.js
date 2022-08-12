@@ -41,6 +41,27 @@ let getProjects = function(){
     return{
         "Project":[
             {
+                "Title": "spillTheBeans",
+                "img": "./images/memories.png",
+                "Description": "This social media app allows users to create, read, update and delete the posts. You can also like and comment on the memories created by other users. The frontend is handled by React.js and the backend is handled by node.js. The UI is created using Material-UI. The posts and userdata are stored in the mongoDb database and authentication is done using jwt and google OAuth.",
+                "Tags": "React, node.js, Material-UI, mongoDb, Google OAuth, JWT",
+                "Link": "https://github.com/ankeett/mern-beans",
+            },
+            {
+                "Title": "ChatBox",
+                "img": "./images/chatbox.png",
+                "Description": "This website allows users to create, join rooms and chat with friends using Socket.io. No logging in, just create a room and start chatting. It has node.js as the backend and html/css as the frontend.",
+                "Tags": "HTML, CSS, node.js, socket,io",
+                "Link": "https://github.com/ankeett/chatbox",
+            },
+            {
+                "Title": "StoryBooks",
+                "img": "./images/storybooks.png",
+                "Description": "This website allows us to create private and public stories that stores all the users, their stories in the MongoDb database. It uses google sign-in to authenticate. It has node.js as the backend and handlebars as the frontend.",
+                "Tags": "node.js, handlebars, MongoDb",
+                "Link": "https://github.com/ankeett/StoryBooks",
+            },
+            {
                 "Title": "VC8000",
                 "img": "./images/VC8000.png",
                 "Description": "This project consists of an assembler and emulator for the VC8000 computer. An assembler is a program that translates a program written in assembly language (symbolic machine language) into machine language. An emulator is a program that imitates a specified machine. So, if you give it a machine language program for that machine, it will be able to run it.",
