@@ -2,18 +2,152 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <title>Ankit's Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <link rel="icon" href= "./icons/icons8-user-96.png">
+    <script src="https://kit.fontawesome.com/41d4681df0.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </head>
-  <body>
-    <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
+
+  <body onload=refreshProjects()>
+    <div id="hero">
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class ="icons">
+          <a href="https://www.instagram.com/ankeett_kafle/" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a>
+          <a href="https://www.linkedin.com/in/akafle1" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+          <a href="https://github.com/ankeett" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a>
+          
+        </div>
+        
+      </nav>
+      <img id="self-image" src="./images/IMG-1132.JPG" width="110%" alt="self">
+
+      <div class="content" id="home">
+        <span class="title">Fullstack Developer</span>
+        <h1>Hello, I'm <span>Ankit</span></h1>
+        <p>I'm a rising junior who's interested in Fullstack Development.</p>
+        <a href="#contact" class="btn" >Say Hi!</a>
+        <a href="Resume-Ankit.docx" class="btn"download >Download CV</a>
+        
+        
+      </div>
     </div>
+
+    <section class="skills" id="skills">
+      <h1>Skills</h1>
+      <div class="skills-grid">
+        <ul class="card">
+          <img src="./icons/programming.png" alt="Programming" >
+          <h4>Programming Languages:</h4>
+          <li>C++</li>
+          <li>Python</li>
+          <li>C</li>
+          <li>Java</li>
+          <li>JavaScript</li>
+        </ul>
+
+        <ul class="card">
+          <img src="./icons/internet.png" alt="Programming">
+          <h4>Web Development:</h4>
+          
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Tailwind</li>
+        <li>Bootstrap</li>
+        <li>React.js</li>
+        <li>Node.js</li>
+        </ul>
+
+        <ul class="card">
+          <img src="./icons/dashboard.png" alt="Programming" >
+          <h4>Data Science:</h4>
+        <li>NumPy</li>
+        <li>Pandas</li>
+        <li>Matplotlib</li>
+        <li>Seaborn</li>
+        </ul>
+    </div>
+    </section>
+
+    <section id="projects">
+      <h1>Projects</h1>
+      <div class="projects-grid" id="div">
+      </div>
+
+        <div class="card">
+            <h4>In Progress...</h4>
+          </div>
+      
+    </section>
+    <br/>
+
+  <section id="about">
+    <h1>About Me</h1>
+
+    <div class="about-div">
+    <div>
+      <img src="./images/self.png" alt="self"">
+    </div>
+    
+    <div>
+        <p>My name is Ankit Kafle, and I'm from Nepal. My love for Computer Science was from my childhood. I didn't have a computer when I was young. I used to see my cousin using a computer, playing games, using social media sites and wonder how everything is going on. How is facebook.com running on his phone? How is the GTA Vice City Police doesn't do anything even on a 5 star when a cheatcode "LeaveMeAlone" is entered. This curiosity of technology made me study Computer Science in Ramapo College of New Jersey. Now I'm into web development and data analysis. I'm learning and I still have many questions in my head about Computer Science and Technology. These question are motivating me to move forward, to learn everyday, to keep up with this evergrowing technological advancement. </p>
+    </div>
+  </div>
+    
+  </section>
+
+  <section id="contact">
+    <h1>Contact Me</h1>
+    <div class="contact">
+      <form action="/form-handler" method="post">
+      <div class="form-items">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Name" required>
+      </div>
+    
+      <div class="form-items">
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" placeholder="Email" required>
+      </div>
+
+      <div class="form-items">
+        <label for="subject">Subject</label>
+        <input type="text" name="subject" id="subject" placeholder="Subject" required>
+      </div>
+
+      <div class="form-items">
+        <label for="message">Message</label>
+        <textarea type="text" name="message" id="message" placeholder="Message" required></textarea>
+      </div>
+
+      
+      <div class="form-items">
+        <label for="check">I'm not a robot</label>
+        <input type="checkbox" name="check" id="check" required>
+      </div>
+      <input type="submit" class="btn-link" value="Send">
+    </form>
+
+  </div>
+  </section>
+
+  <footer>
+    <div class ="icons">
+        <a href="https://www.instagram.com/ankeett_kafle/" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a>
+        <a href="https://www.linkedin.com/in/akafle1" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+        <a href="https://github.com/ankeett" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a>
+      </div>
+  </footer>
+
+
   </body>
 </html>
